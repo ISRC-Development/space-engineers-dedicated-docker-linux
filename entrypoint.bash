@@ -47,5 +47,5 @@ cat /appdata/space-engineers/SpaceEngineersDedicated/SpaceEngineers-Dedicated.cf
 cat /appdata/space-engineers/SpaceEngineersDedicated/SpaceEngineers-Dedicated.cfg | sed -E "$SED_EXPRESSION_FULL" > /tmp/SpaceEngineers-Dedicated.cfg && cat /tmp/SpaceEngineers-Dedicated.cfg > /appdata/space-engineers/SpaceEngineersDedicated/SpaceEngineers-Dedicated.cfg
 
 
-runuser -l wine bash -c 'steamcmd +login anonymous +@sSteamCmdForcePlatformType windows +force_install_dir /appdata/space-engineers/SpaceEngineersDedicated +app_update 298740 +quit'
+runuser -l wine bash -c 'steamcmd +login anonymous +@sSteamCmdForcePlatformType windows +force_install_dir /appdata/space-engineers/SpaceEngineersDedicated +app_update 298740  +workshop_download_item 244850 642589539 +workshop_download_item 244850 1592304459 +workshop_download_item 244850 406244471 +workshop_download_item 244850 1931509062 +workshop_download_item 244850 1662953858 +workshop_download_item 244850 1918681825 +workshop_download_item 244850 1697184408 +workshop_download_item 244850 514062285 +workshop_download_item 244850 1359954841 +workshop_download_item 244850 2789619117 +workshop_download_item 244850 2143322540 +workshop_download_item 244850 2266109786 +workshop_download_item 244850 1521905890 +workshop_download_item 244850 1902970975 +quit'
 runuser -l wine bash -c '/entrypoint-space_engineers.bash'
